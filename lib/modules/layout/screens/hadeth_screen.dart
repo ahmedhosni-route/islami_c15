@@ -7,7 +7,20 @@ class HadethScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/images/quran_background.png"))
+          image: DecorationImage(image: AssetImage("assets/images/quran_background.png"),)
+
+      ),
+      child: SafeArea(
+        child: Column(
+          children: [
+            Center(
+              child: Image.asset(
+                "assets/logo/home_logo.png",
+                height: 140,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
